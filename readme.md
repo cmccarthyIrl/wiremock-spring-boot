@@ -5,7 +5,7 @@ This project provides an implementation of a WireMock server that is automatical
 # Installation 
 To use this project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/cmccarthyirl/wiremock.git` <br>
+1. Clone the repository: `git clone https://github.com/cmccarthyIrl/wiremock-spring-boot.git` <br>
 2. Open the project in your preferred IDE. <br>
 3. Build the project: `./gradlew build` or `mvnw package` from the root directory<br>
 4. Run the WireMock server by executing the following command:
