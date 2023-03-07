@@ -1,0 +1,9 @@
+spring:
+  main:
+    web-application-type: none
+  application:
+  name: wiremock-spring-boot-app
+wiremock:
+  server:
+    files: classpath*:/__files
+    stubs: classpath*:/mappings
