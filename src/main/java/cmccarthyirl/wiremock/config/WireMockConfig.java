@@ -12,12 +12,7 @@ import org.springframework.cloud.contract.wiremock.WireMockSpring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.io.File;
 import java.net.URL;
-import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
 @Configuration
 public class WireMockConfig {
@@ -38,6 +33,7 @@ public class WireMockConfig {
                 .build(), new ResponseLoggingPostServeAction()).notifier(new ConsoleNotifier(true));
         return options;
     }
+
     public String isRunningFromJar() {
         URL path = WireMockConfig.class.getResource("WireMockConfig.class");
         if (path.toString().startsWith("jar:")) {
